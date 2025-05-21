@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* CSS Document */
+body {
+    background-color: #f8f8ff; /* パステル調の白に近い青み */
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+.m-plus-1p-regular {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; /* 左寄せに変更 */
+    align-items: center;
+    padding: 0px;
+    background-color: #e3f2fd; /* パステルブルー */
+    width : 100%;
+    border-bottom: solid 3px #b3c6e0;
+
+}
+header ul {
+    display: flex;
+    justify-content: flex-start; /* 左寄せに変更 */
+    align-items: center;
+    padding: 0; /* パディングを0に */
+    margin: 0;  /* マージンを0に */
+    background-color: #e3f2fd; /* ヘッダーリストも同じ色に */
+    list-style: none; /* ← 追加 */
+}
+header ul li {
+    padding :10px;
+    font-size : 25px;
+    color: #3a3a3a; /* より濃いグレーで視認性UP */
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+#header01 {
+    display :flex;
+}
+
+#header02 {
+    display : flex;
+}
+/* aタグの装飾も消す */
+header ul li a{
+    text-decoration: none;
+    color: #3a3a3a; /* より濃いグレーで視認性UP */
+    transition: color 0.1s linear;
+    font-weight: bold;
+    padding-left : 25px;
+    padding-right : 25px;
+
+}
+footer ul li {
+    margin-left: 50px;
+    font-size: 18px;
+    color: #222; /* li自体の色 */
+    align-items: center;
+}
+footer ul li a {
+    color: #3a3a3a !important; /* リンクテキストも黒色に */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.1s linear;
+}
+header ul li a:hover,
+footer ul li a:hover {
+    color: #64b5f6; /* パステルブルーのアクセント */
+    border-bottom : solid 2px #64b5f6;
+}
+
+#titletext {
+    text-decoration: none;
+    color: #3a3a3a; /* より濃いグレーで視認性UP */
+}
+
+header #copy {
+    margin-left : auto;
+    margin-right : 20px;
+}
+
+#main {
+    width: 980px;
+    margin: 0 auto;
+    display: block;
+    background-color : #ffffff; /* メインは純白でコントラストUP */
+    padding-top: 0px;
+    margin-top : 0px; /* 追加 */
+    border: solid 2px #b3c6e0;
+    font-size: 17px; /* フッターの高さ分だけ下に余白を追加 */ 
+    box-sizing: border-box;
+    /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
+
+footer {
+    display: flex;
+    position: fixed; /* フッターを固定 */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e3f2fd;
+    border-top: solid 2px #b3c6e0;
+    text-align: center;
+    padding: 10px 0; /* 上下10px、左右0px */
+    margin-top: 0;    /* 余白をリセット */
+    justify-content: center; /* 追加 */
+    flex-direction: column;
+    
+    
+}
+
+#footer_context {
+    align-items: center;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #e3f2fd;
+    padding-top: 0px;
+    margin-top: 0px;
+    justify-content: center; /* 追加 */
+}
+footer ul {
+    display: flex;
+    justify-content: center; /* 中央寄せに変更 */
+    align-items: center;
+    padding: 0; /* パディングを0に */
+    margin: 0;  /* マージンを0に */
+    background-color: #e3f2fd;
+    list-style: none; /* ← 追加 */
+}
+footer ul li {
+    margin-left: 50px;
+    font-size: 18px;
+    color: #222; /* li自体の色 */
+    align-items: center;
+}
+
+footer p {
+    margin : 0px;
+}
+
+#main {
+    padding : 10px;
+    margin-top: 50px;
+    border :solid 2px #bdbdbd;
+}
+
+#breadcrumb {
+    font-size: smaller;
+    margin-bottom  :20px;
+}
+
+#breadcrumb ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#breadcrumb li {
+    display: inline;
+    margin-right: 5px;
+}
+
+#breadcrumb ol li:after {
+    content: ">";
+    padding-left: 7px;
+}
+
+#breadcrumb ol li:last-child:after {
+    content: "";
+}
+
+#main H1 {
+    border: solid 2px #90caf9;         /* より鮮やかなパステルブルー */
+    background: #ffb3c6;               /* 強めのパステルピンク */
+    padding: 10px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#main H2 {
+    border-bottom: solid 2px #64b5f6;  /* パステルブルー */
+    background: #b3e5fc;                /* パステルブルー */
+    padding: 10px 10px 1px 10px;
+    font-size: 28px;   /* フォントサイズを調整 */
+    margin-top: 0;
+    padding: 5px;
+
+}
+
+#main H3 {
+    font-size: 25px;
+    padding: 5px;
+    background: #b2ffb2;               /* 強めのパステルグリーン */
+    border-left: 6px solid #81c784;    /* グリーンのアクセント */
+    padding-left: 10px;
+}
+
+img {
+    max-width: 720px;
+}
+
+#main p {
+    line-height:2.0;
+    font-family: Noto Sans JP, sans-serif;
+}
+#footer_fix {
+    padding-top:10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #main {
+        width: 90%;
+    }
+    header ul li {
+        font-size: 18px;
+        padding:0px;
+        margin: 0px;
+        padding-top : 10px;
+        padding-bottom : 10px;
+        
+    }
+    header ul {
+        padding: 0px;
+        margin: 0px;
+        float : none;
+        /* display: block; */
+    }
+    header {
+        padding: 0px;
+        margin: 0px;
+    }
+    footer {
+        display: none;
+    }
+
+    #main H2 {
+        margin: 0px;
+        padding :5px;
+    }
+    #copy {
+        display: none;
+    }
+    #header01 {
+        display : block;
+    }
+    #header02 {
+        display : block;
+    }
+    img {
+        width:85%;
+        height: auto;
+    }
+    
+}
+

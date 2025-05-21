@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>テトリス</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/tetris.css">
+        <script src="js/script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    </head>
+    <body>
+        <header>
+            
+           <ul>
+                <div id="header01">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="list.html">ゲーム</a></li>
+                </div>
+                <div id="header02">
+                <li><a href="aboutme.html">作者コメント</a></li>
+                <li><a href="about.html">このサイトについて</a></li>
+                </div></ul>
+            <div id="copy">
+                    <p>Copyright &copy; 2025</p>
+            </div>
+        </header>
+        <div id="main">
+
+            <section>
+              <div id="tetris-container" style="width : 90%">
+                <canvas id="tetris" width="400" height="600"></canvas>
+                <button id="restartBtn">リスタート</button>
+                <div id="virtual-buttons">
+                  <button id="leftBtn">←</button>
+                  <button id="rightBtn">→</button>
+                  <button id="downBtn">↓</button>
+                  <button id="rotateBtn">Z</button>
+                  <button id="hardDropBtn">X</button>
+                </div>
+                <p id="score">スコア: 0</p>
+                <ul id="tetris-controls">
+                  <li>← →：左右移動</li>
+                  <li>↓：下に落とす</li>
+                  <li>Z：回転</li>
+                  <li>X：ハードドロップ</li>
+                  <li>リスタートボタンで再開</li>
+                </ul>
+              </div>
+            </section>
+        </div>
+        <footer>
+            <div id="footer_context">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="list.html">ゲーム</a></li>
+                <li><a href="aboutme.html">作者コメント</a></li>
+                <li><a href="about.html">このページについて</a></li>
+            </ul>
+        </div>
+        </footer>
+        <script src="js/tetris.js"></script>
+    </body>
