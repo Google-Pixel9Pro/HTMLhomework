@@ -11,6 +11,13 @@ html, body {
     padding-bottom: 0 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+
+}
+header{
+    display:none;
+}
+footer {
+    display: none !important; /* フッター非表示 */
 }
 
 section {
